@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#081e29" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="assets/images/logo.png" />
+    <link
+      rel="preload"
+      href="assets/fonts/aspekta-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/victor-serif-medium-italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/site.js" defer></script>
+    <title>Design system — Equipe Ponte</title>
+    <meta
+      name="description"
+      content="Cores, tipografia, ícones e componentes da identidade digital da Equipe Ponte."
+    />
+    <link
+      rel="canonical"
+      href="https://equipeponte.vercel.app/design-system.html"
+    />
+    <meta
+      property="og:url"
+      content="https://equipeponte.vercel.app/design-system.html"
+    />
+    <meta
+      property="og:image"
+      content="https://equipeponte.vercel.app/assets/images/hero-sky.webp"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="ds-header wrap">
+      <a class="brand" href="./"
+        ><img src="assets/images/logo.png" width="48" height="48" alt="" /><span
+          >equipe <strong>ponte</strong></span
+        ></a
+      ><a class="text-link" href="./">Ver o site ↗</a>
+    </header>
+    <main id="conteudo" class="wrap">
+      <div class="ds-intro">
+        <p class="overline">Identidade digital · Versão 01</p>
+        <h1>Design system.</h1>
+        <p>
+          Uma linguagem visual para a Equipe Ponte. A estrutura editorial da
+          Geviti encontra a paleta da Ponte: contraste entre tipografia serifa e
+          sem serifa, botões em cápsula e objetos tridimensionais.
+        </p>
+        <nav class="ds-nav" aria-label="Seções do design system">
+          <a href="#cores">Cores</a><a href="#tipografia">Tipografia</a
+          ><a href="#botoes">Botões</a><a href="#icones">Ícones 3D</a
+          ><a href="#componentes">Componentes</a
+          ><a href="#fundamentos">Fundamentos</a>
+        </nav>
+      </div>
+      <section class="ds-section" id="cores">
+        <h2>Uma paleta de encontros.</h2>
+        <p>
+          As quatro cores originais da marca. Clique em uma amostra para copiar
+          o código. Verde01 e Cinza02 acompanham texto escuro; Verde02 e Cinza01
+          sustentam texto branco.
+        </p>
+        <div class="swatches">
+          <button
+            class="swatch"
+            style="--swatch: #6ec597"
+            data-copy="#6ec597"
+            aria-label="Copiar Verde01, #6ec597"
+          >
+            <span class="swatch__color"></span
+            ><span class="swatch__label"
+              ><strong>Verde01</strong><span>#6ec597</span></span
+            ></button
+          ><button
+            class="swatch"
+            style="--swatch: #2c5d78"
+            data-copy="#2c5d78"
+            aria-label="Copiar Verde02, #2c5d78"
+          >
+            <span class="swatch__color"></span
+            ><span class="swatch__label"
+              ><strong>Verde02</strong><span>#2c5d78</span></span
+            ></button
+          ><button
+            class="swatch"
+            style="--swatch: #081e29"
+            data-copy="#081e29"
+            aria-label="Copiar Cinza01, #081e29"
+          >
+            <span class="swatch__color"></span
+            ><span class="swatch__label"
+              ><strong>Cinza01</strong><span>#081e29</span></span
+            ></button
+          ><button
+            class="swatch"
+            style="--swatch: #a7b7c7"
+            data-copy="#a7b7c7"
+            aria-label="Copiar Cinza02, #a7b7c7"
+          >
+            <span class="swatch__color"></span
+            ><span class="swatch__label"
+              ><strong>Cinza02</strong><span>#a7b7c7</span></span
+            >
+          </button>
+        </div>
+        <p
+          class="copy-status"
+          id="copy-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </section>
+      <section class="ds-section" id="tipografia">
+        <h2>Duas vozes. Uma linguagem.</h2>
+        <p>
+          As mesmas famílias identificadas na referência, servidas localmente.
+          Aspekta organiza a informação. Victor Serif dá expressão aos títulos.
+        </p>
+        <div class="type-example">
+          <div>Victor Serif<br /><small>Medium · 500 · Itálico</small></div>
+          <p class="type-display">Um espaço para ser.</p>
+        </div>
+        <div class="type-example">
+          <div>Victor Serif<br /><small>Medium · 500 · Regular</small></div>
+          <p class="type-display" style="font-style: normal">
+            A singularidade de cada um.
+          </p>
+        </div>
+        <div class="type-example">
+          <div>Aspekta<br /><small>Regular · 400</small></div>
+          <p class="type-body">
+            Psicanálise, arte e encontros.<br />Um trabalho que se constrói
+            junto.
+          </p>
+        </div>
+        <div class="type-example">
+          <div>Aspekta<br /><small>Medium · 500 / Semibold · 600</small></div>
+          <p class="type-body">
+            <span style="font-weight: 500">Conheça a Ponte</span><br /><strong
+              >Uma escuta singular.</strong
+            >
+          </p>
+        </div>
+      </section>
+      <section class="ds-section" id="botoes">
+        <h2>Ações claras, gestos sutis.</h2>
+        <p>
+          Altura mínima de 56px, raio em cápsula e um ícone de direção. Hover
+          com deslocamento de 2px, foco visível e respeito à preferência por
+          movimento reduzido.
+        </p>
+        <div class="ds-samples">
+          <a class="button button--primary" href="./#contato"
+            >Primário <span class="button__icon" aria-hidden="true">↗</span></a
+          ><a class="button button--mint" href="./#contato"
+            >Destaque <span class="button__icon" aria-hidden="true">↗</span></a
+          ><a class="button button--light" href="./#sobre"
+            >Claro <span class="button__icon" aria-hidden="true">↗</span></a
+          ><a class="button button--outline" href="./#grupo"
+            >Contorno <span class="button__icon" aria-hidden="true">↗</span></a
+          ><button class="button button--primary" disabled>
+            Indisponível <span class="button__icon" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </section>
+      <section class="ds-section" id="icones">
+        <h2>Volume, luz e significado.</h2>
+        <p>
+          Família original de seis ícones 3D. Vidro fosco, verde suave e
+          azul-petróleo. Os ícones acompanham rótulos; nunca substituem a
+          informação textual.
+        </p>
+        <div class="ds-icons">
+          <div>
+            <div class="icon-scene">
+              <span class="icon-3d icon-3d--chat" aria-hidden="true"></span>
+            </div>
+            <p>Escuta</p>
+          </div>
+          <div>
+            <div class="icon-scene">
+              <span class="icon-3d icon-3d--bridge" aria-hidden="true"></span>
+            </div>
+            <p>Encontro</p>
+          </div>
+          <div>
+            <div class="icon-scene">
+              <span
+                class="icon-3d icon-3d--connection"
+                aria-hidden="true"
+              ></span>
+            </div>
+            <p>Laços</p>
+          </div>
+          <div>
+            <div class="icon-scene">
+              <span class="icon-3d icon-3d--brush" aria-hidden="true"></span>
+            </div>
+            <p>Pintura</p>
+          </div>
+          <div>
+            <div class="icon-scene">
+              <span class="icon-3d icon-3d--music" aria-hidden="true"></span>
+            </div>
+            <p>Música</p>
+          </div>
+          <div>
+            <div class="icon-scene">
+              <span class="icon-3d icon-3d--ribbon" aria-hidden="true"></span>
+            </div>
+            <p>Movimento</p>
+          </div>
+        </div>
+      </section>
+      <section class="ds-section" id="componentes">
+        <h2>Componentes em uso.</h2>
+        <p>
+          Navegação responsiva, cartões de oficinas com detalhes em diálogo,
+          carrossel com botões, perguntas expansíveis e chamada de contato.
+        </p>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>
+              Como funciona o acordeão?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              O componente usa details e summary nativos. Funciona com teclado e
+              sem JavaScript, e comunica seu estado às tecnologias assistivas.
+            </p>
+          </details>
+          <details class="faq-item">
+            <summary>
+              Como reutilizar os componentes?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Use as classes de assets/styles.css e os tokens definidos em
+              :root. A página inicial e este catálogo compartilham a mesma folha
+              de estilos.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="ds-section" id="fundamentos">
+        <h2>Consistência em cada detalhe.</h2>
+        <table class="ds-table">
+          <caption class="sr-only">
+            Tokens de espaçamento, forma, layout e movimento
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Fundamento</th>
+              <th scope="col">Valores</th>
+              <th scope="col">Uso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Espaçamento</td>
+              <td>4, 8, 12, 16, 24, 32, 48, 64, 96px</td>
+              <td>Ritmo e alinhamento</td>
+            </tr>
+            <tr>
+              <td>Raios</td>
+              <td>12, 24, 32px / cápsula</td>
+              <td>Elementos, cartões, painéis e botões</td>
+            </tr>
+            <tr>
+              <td>Grid</td>
+              <td>Máximo 1280px</td>
+              <td>3 colunas → 2 → 1</td>
+            </tr>
+            <tr>
+              <td>Movimento</td>
+              <td>180 e 320ms</td>
+              <td>Interações discretas</td>
+            </tr>
+            <tr>
+              <td>Corpo</td>
+              <td>16px / 1.6</td>
+              <td>Leitura confortável</td>
+            </tr>
+            <tr>
+              <td>Acessibilidade</td>
+              <td>WCAG 2.2 AA como meta</td>
+              <td>Semântica, foco e contraste</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer class="footer wrap">
+      <div class="footer-bottom">
+        <span>Equipe Ponte · Design system v01</span
+        ><a href="./">Voltar ao site ↗</a>
+      </div>
+    </footer>
+  </body>
+</html>
