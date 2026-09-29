@@ -254,7 +254,8 @@ p {
   color: var(--white);
 }
 .button--primary:hover {
-  background: var(--verde-02);
+  background: var(--verde-01);
+  color: var(--ink);
 }
 .button--light {
   background: var(--white);
@@ -264,7 +265,8 @@ p {
   background: var(--surface);
 }
 .button--light:hover {
-  background: var(--surface-mint);
+  background: var(--verde-01);
+  color: var(--ink);
 }
 .button--mint {
   background: var(--verde-01);
@@ -274,7 +276,8 @@ p {
   background: #081e2910;
 }
 .button--mint:hover {
-  background: #8cd3ad;
+  background: var(--verde-01);
+  color: var(--ink);
 }
 .button--outline {
   border-color: var(--border);
@@ -285,7 +288,8 @@ p {
   background: var(--surface-mint);
 }
 .button--outline:hover {
-  background: var(--surface-mint);
+  background: var(--verde-01);
+  color: var(--ink);
 }
 .button:disabled {
   opacity: 0.45;
@@ -409,7 +413,8 @@ p {
   gap: 24px;
 }
 .nav-contact:hover {
-  background: var(--verde-02);
+  background: var(--verde-01);
+  color: var(--ink);
 }
 .menu-toggle {
   display: none;
@@ -627,7 +632,8 @@ figcaption {
   color: var(--ink);
 }
 .carousel-controls button:hover:not(:disabled) {
-  background: var(--surface-mint);
+  background: var(--verde-01);
+  color: var(--ink);
 }
 .carousel-controls button:disabled {
   opacity: 0.35;
@@ -1979,4 +1985,22 @@ dialog::backdrop {
   .footer-nav {
     gap: 14px 22px;
   }
+}
+
+/* Shared hover feedback: brand green with readable dark text. */
+a:not(.button):not(.nav-contact):hover {
+  background-color: var(--verde-01);
+  color: var(--ink);
+  text-decoration-color: var(--ink);
+}
+button:not(:disabled):hover {
+  background-color: var(--verde-01);
+  color: var(--ink);
+}
+.button:hover {
+  border-color: var(--verde-01);
+}
+.button:hover .button__icon {
+  background: var(--verde-01);
+  color: var(--ink);
 }
