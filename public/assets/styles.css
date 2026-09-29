@@ -1992,7 +1992,7 @@ dialog::backdrop {
 }
 
 /* Content links only change text and underline, never their surface. */
-a:not(.button):not(.nav-contact):hover {
+a:not(.button):not(.nav-contact):not(.brand):hover {
   color: var(--verde-01);
   text-decoration-color: var(--verde-01);
 }
@@ -2045,9 +2045,9 @@ a:not(.button):not(.nav-contact):hover {
   color: var(--white);
 }
 
-/* Let the circular header mark overlap the navigation's lower edge. */
+/* Keep the enlarged header mark centered inside the navigation. */
 .site-header .brand img {
-  transform: translateY(18px) scale(1.5);
+  transform: scale(1.425);
   transform-origin: left center;
   margin-right: 24px;
   position: relative;
