@@ -42,6 +42,7 @@
 }
 :root {
   --verde-01: #6ec597;
+  --verde-hover: #358159;
   --verde-02: #2c5d78;
   --cinza-01: #081e29;
   --cinza-02: #a7b7c7;
@@ -276,8 +277,8 @@ p {
   background: #081e2910;
 }
 .button--mint:hover {
-  background: var(--verde-01);
-  color: var(--ink);
+  background: var(--verde-hover);
+  color: var(--white);
 }
 .button--outline {
   border-color: var(--border);
@@ -1987,22 +1988,19 @@ dialog::backdrop {
   }
 }
 
-/* Shared hover feedback: brand green with readable dark text. */
+/* Content links only change text and underline, never their surface. */
 a:not(.button):not(.nav-contact):hover {
-  background-color: var(--verde-01);
-  color: var(--ink);
-  text-decoration-color: var(--ink);
-}
-button:not(:disabled):hover {
-  background-color: var(--verde-01);
-  color: var(--ink);
+  color: var(--verde-01);
+  text-decoration-color: var(--verde-01);
 }
 .button:hover {
   border-color: var(--verde-01);
 }
+.button--mint:hover {
+  border-color: var(--verde-hover);
+}
 .button:hover .button__icon {
-  background: var(--verde-01);
-  color: var(--ink);
+  color: inherit;
 }
 
 /* Footer surface shared by every page, including the design system. */
@@ -2017,18 +2015,19 @@ button:not(:disabled):hover {
 .footer-nav {
   color: var(--white);
 }
-/* Navigation hover keeps the original surface and highlights its underline. */
+/* Menu text uses Switzer Medium; the contact CTA follows button rules. */
+.site-header #main-nav > a {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
 .site-header #main-nav > a:not(.nav-contact):hover {
   background: transparent;
-  color: var(--ink);
+  color: var(--verde-01);
 }
 .site-header #main-nav > a:hover:after {
   background: var(--verde-01);
 }
 .site-header #main-nav > .nav-contact:hover {
-  background: var(--ink);
-  color: var(--white);
-  text-decoration: underline;
-  text-decoration-color: var(--verde-01);
-  text-underline-offset: 5px;
+  background: var(--verde-01);
+  color: var(--ink);
 }
