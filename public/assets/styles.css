@@ -2053,3 +2053,8 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   position: relative;
   z-index: 1;
 }
+
+/* Include the scaled logo's visual bounds in the header spacing. */
+.site-header {
+  padding-block: calc(var(--space-4) + 11px);
+}
