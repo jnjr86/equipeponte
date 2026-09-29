@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#081e29" />
     <meta name="robots" content="noindex, nofollow" />
+    <title>Psicanálise e trabalho em grupo — Equipe Ponte</title>
+    <meta
+      name="description"
+      content="Desde 2012, a Equipe Ponte desenvolve uma proposta clínica de psicanálise, trabalho em grupo e oficinas terapêuticas em São Paulo."
+    />
+    <link rel="canonical" href="https://equipeponte.vercel.app/" />
+    <meta
+      property="og:title"
+      content="Psicanálise e trabalho em grupo — Equipe Ponte"
+    />
+    <meta
+      property="og:description"
+      content="Desde 2012, a Equipe Ponte desenvolve uma proposta clínica de psicanálise, trabalho em grupo e oficinas terapêuticas em São Paulo."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://equipeponte.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://equipeponte.vercel.app/assets/images/equipe.webp"
+    />
     <link rel="icon" href="assets/images/logo.png" />
     <link
       rel="preload"
@@ -21,34 +42,14 @@
       crossorigin
     />
     <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/site-config.js" defer></script>
     <script src="assets/site.js" defer></script>
-    <title>Equipe Ponte — Psicanálise, arte e encontros em São Paulo</title>
-    <meta
-      name="description"
-      content="Desde 2012, a Equipe Ponte reúne psicanálise, trabalho em grupo e oficinas artísticas para crianças, adolescentes e jovens adultos em São Paulo."
-    />
-    <meta
-      property="og:title"
-      content="Equipe Ponte — Um espaço para ser, um caminho para se conectar."
-    />
-    <meta
-      property="og:description"
-      content="Psicanálise, arte e encontros. Conheça o trabalho em grupo e as oficinas da Equipe Ponte, em São Paulo."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
-    <link rel="canonical" href="https://equipeponte.vercel.app/" />
-    <meta property="og:url" content="https://equipeponte.vercel.app/" />
-    <meta
-      property="og:image"
-      content="https://equipeponte.vercel.app/assets/images/hero-sky.webp"
-    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Equipe Ponte",
-        "url": "https://equipeponte.vercel.app/",
+        "url": "https://equipeponte.vercel.app",
         "email": "equipeponte@gmail.com",
         "address": {
           "@type": "PostalAddress",
@@ -66,7 +67,7 @@
     <main id="conteudo">
       <section class="hero" aria-labelledby="hero-title">
         <header class="site-header">
-          <a class="brand" href="./" aria-label="Equipe Ponte — início"
+          <a class="brand" href="index.html" aria-label="Equipe Ponte — Home"
             ><img
               src="assets/images/logo.png"
               width="48"
@@ -82,27 +83,26 @@
             <span>Menu</span><span class="menu-lines" aria-hidden="true"></span>
           </button>
           <nav id="main-nav" aria-label="Navegação principal">
-            <a href="#sobre">A Ponte</a><a href="#grupo">O grupo</a
-            ><a href="#oficinas">Oficinas</a><a href="#equipe">A equipe</a
-            ><a class="nav-contact" href="#contato"
-              >Vamos conversar <span aria-hidden="true">↗</span></a
-            >
+            <a href="index.html" aria-current="page">Home</a
+            ><a href="a-equipe.html">A Equipe</a
+            ><a href="o-grupo.html">O Grupo</a
+            ><a href="oficinas.html">Oficinas</a
+            ><a href="textos-e-publicacoes.html">Textos e publicações</a
+            ><a href="contato.html" class="nav-contact">Contato</a>
           </nav>
         </header>
         <div class="hero__content">
           <p class="hero__eyebrow">
-            <span class="status-dot"></span> Construindo encontros desde 2012
+            <span class="status-dot"></span>Desde 2012
           </p>
-          <p class="hero__intro">Psicanálise, arte e encontros.</p>
+          <p class="hero__intro">Equipe Ponte</p>
           <h1 id="hero-title">
-            Um espaço para ser.<br />
-            Um caminho para se conectar.
+            Psicanálise e<br />
+            trabalho em grupo.
           </h1>
           <p class="hero__description">
-            Um trabalho em grupo que acolhe a singularidade<br
-              class="desktop-break"
-            />
-            e abre possibilidades de relação com o mundo.
+            Crianças, adolescentes e jovens adultos.<br />Novas formas de
+            expressão e relação com o mundo.
           </p>
           <div class="hero__actions">
             <a class="button button--light" href="#sobre"
@@ -115,115 +115,71 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   /></svg></span></a
-            ><a class="quiet-link" href="#contato">Fale com a equipe</a>
+            ><a class="quiet-link" href="contato.html">Fale com a equipe</a>
           </div>
           <div class="hero__meta">
             <span>São Paulo · Sumaré</span
-            ><span>Escuta, cuidado e presença</span>
+            ><span>Oficinas terapêuticas e artísticas</span>
           </div>
         </div>
-        <a
-          class="hero__scroll"
-          href="#sobre"
-          aria-label="Explorar o trabalho da Ponte"
+        <a class="hero__scroll" href="#sobre"
           >Explore <span aria-hidden="true">↓</span></a
         >
       </section>
-      <div class="intro-band wrap">
-        <p>Cada pessoa, uma forma de estar no mundo.</p>
-        <div>
-          <span>Psicanálise</span><i aria-hidden="true"></i
-          ><span>Trabalho em grupo</span><i aria-hidden="true"></i
-          ><span>Oficinas artísticas</span>
-        </div>
-      </div>
-      <section class="section wrap about" id="sobre">
+      <section class="section wrap" id="sobre">
         <div class="section-heading centered">
-          <p class="overline">A nossa proposta</p>
-          <h2>
-            Para além dos diagnósticos,<br /><em
-              >a singularidade de cada um.</em
-            >
-          </h2>
-          <p>
-            Há muitas maneiras de sentir, se expressar e criar laços.<br
-              class="desktop-break"
-            />
-            Na Ponte, cada uma delas encontra espaço.
-          </p>
+          <p class="overline">A Ponte</p>
+          <h2>Uma proposta clínica.<br /><em>Um trabalho em grupo.</em></h2>
         </div>
-        <div class="principles">
-          <article>
-            <div class="icon-scene">
-              <span class="icon-3d icon-3d--chat" aria-hidden="true"></span>
-            </div>
-            <h3>Uma escuta singular</h3>
-            <p>
-              Olhar para cada pessoa, seus gestos e suas possibilidades, para
-              além das dificuldades que a acompanham.
+        <div class="editorial-grid">
+          <div class="prose">
+            <p data-source-paragraph="3">
+              Desde 2012, a Equipe Ponte pesquisa e realiza uma proposta clínica
+              de tratamento através da psicanálise e do trabalho em grupo
+              direcionado a crianças, adolencentes e jovens adultos que
+              apresentam sofrimento e/ou significativos impasses no laço social,
+              nas relações consigo e com os outros. Muitas delas possuem
+              diagnósticos que se enquadram no que a linguagem médica define
+              como deficiências (de aprendizagem, deficit cognitivo, etc),
+              síndromes (down, prader willi, rubinstein-taybi, etc), quadros
+              neurológicos (epilepsia, paralisia cerebral, etc) ou diagnósticos
+              psiquiátricos (transtorno do espectro autista, transtorno
+              obsessivo-compulsivo, transtorno bipolar, TDAH, etc), e outras um
+              acentuado sofrimento e dificuldade nos laços sem que possuam
+              qualquer diagnóstico fechado; mas, de modo geral, possuem uma
+              forma muito particular de se relacionarem com a vida.
             </p>
-          </article>
-          <article>
-            <div class="icon-scene">
-              <span class="icon-3d icon-3d--bridge" aria-hidden="true"></span>
-            </div>
-            <h3>Um lugar de encontro</h3>
-            <p>
-              O grupo como espaço para estar com o outro, construir relações e
-              sustentar a própria presença.
+            <p data-source-paragraph="4">
+              A Ponte oferece um trabalho a partir do dispositivo grupal que se
+              utiliza, da teoria clínica psicanalítica, bem como de diferentes
+              oficinas terapêuticas e artísticas como instrumentos que promovam
+              novas formas de expressão e relação com o mundo.
             </p>
-          </article>
-          <article>
-            <div class="icon-scene">
-              <span
-                class="icon-3d icon-3d--connection"
-                aria-hidden="true"
-              ></span>
-            </div>
-            <h3>Outras formas de expressão</h3>
-            <p>
-              A arte como convite para investigar gostos, descobrir interesses e
-              dar lugar ao que é próprio de cada um.
-            </p>
-          </article>
+          </div>
+          <figure class="editorial-photo">
+            <img
+              src="assets/images/obra-gabriel.webp"
+              srcset="
+                assets/images/obra-gabriel-small.webp  700w,
+                assets/images/obra-gabriel.webp       1440w
+              "
+              sizes="(max-width: 900px) 90vw, 900px"
+              width="1440"
+              height="1080"
+              alt="Obra de Gabriel N.: pintura abstrata em azul, vermelho e tons claros"
+              loading="lazy"
+            />
+            <figcaption>Obra de Gabriel N.</figcaption>
+          </figure>
         </div>
       </section>
       <section class="group-section section" id="grupo">
-        <div class="wrap split">
-          <figure class="artwork">
-            <img
-              src="assets/images/obra-pedro.webp"
-              srcset="
-                assets/images/obra-pedro-small.webp  768w,
-                assets/images/obra-pedro.webp       1440w
-              "
-              sizes="(max-width: 900px) 90vw, 560px"
-              width="1440"
-              height="1080"
-              alt="Pintura abstrata de Pedro M., com gestos azuis e vermelhos sobre fundo claro"
-              loading="lazy"
-            />
-            <figcaption>Obra de Pedro M. · Acervo Equipe Ponte</figcaption>
-          </figure>
-          <div class="split__copy">
-            <p class="overline">O grupo</p>
-            <h2>
-              Não nos constituímos sozinhos.<br /><em
-                >É no encontro que algo acontece.</em
-              >
-            </h2>
-            <p>
-              Desde 2012, a Equipe Ponte desenvolve uma proposta clínica
-              orientada pela psicanálise, dirigida a crianças, adolescentes e
-              jovens adultos com impasses no laço social.
-            </p>
-            <p>
-              O trabalho coletivo acolhe as particularidades de cada
-              participante. Entre escutar, se fazer escutar e partilhar
-              experiências, outras formas de estar junto podem encontrar lugar.
-            </p>
-            <a class="button button--primary" href="#contato"
-              >Conversar sobre o grupo<span class="button__icon"
+        <div class="wrap reading-layout">
+          <div class="reading-aside">
+            <span class="icon-3d icon-3d--bridge" aria-hidden="true"></span>
+            <h2>O grupo</h2>
+            <a class="button button--outline" href="o-grupo.html"
+              >Conheça o grupo<span class="button__icon"
                 ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path
                     d="M5 12h14m-6-6 6 6-6 6"
@@ -234,301 +190,23 @@
                   /></svg></span
             ></a>
           </div>
-        </div>
-      </section>
-      <section class="section workshops" id="oficinas">
-        <div class="wrap">
-          <div class="section-heading section-heading--split">
-            <div>
-              <p class="overline">As oficinas</p>
-              <h2>Muitas linguagens.<br /><em>Novas possibilidades.</em></h2>
-            </div>
-            <div class="section-heading__aside">
-              <p>
-                Não é sobre aprender a fazer arte.<br />É sobre encontrar uma
-                forma própria de se expressar.
-              </p>
-              <div class="carousel-controls">
-                <button aria-label="Oficina anterior" data-slide="-1">←</button
-                ><button aria-label="Próxima oficina" data-slide="1">→</button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="workshop-track"
-            aria-label="Oficinas da Equipe Ponte"
-            tabindex="0"
-          >
-            <article class="workshop-card">
-              <div class="icon-scene">
-                <span class="icon-3d icon-3d--brush" aria-hidden="true"></span>
-              </div>
-              <div class="workshop-card__body">
-                <h3>Pintura</h3>
-                <p>Uma forma de dizer, para além das palavras.</p>
-                <button
-                  class="text-link"
-                  data-workshop="0"
-                  aria-haspopup="dialog"
-                >
-                  Conhecer a oficina
-                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path
-                      d="M5 12h14m-6-6 6 6-6 6"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </article>
-            <article class="workshop-card">
-              <div class="icon-scene">
-                <span class="icon-3d icon-3d--music" aria-hidden="true"></span>
-              </div>
-              <div class="workshop-card__body">
-                <h3>Música e canto</h3>
-                <p>Outros caminhos para fazer a voz aparecer.</p>
-                <button
-                  class="text-link"
-                  data-workshop="1"
-                  aria-haspopup="dialog"
-                >
-                  Conhecer a oficina
-                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path
-                      d="M5 12h14m-6-6 6 6-6 6"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </article>
-            <article class="workshop-card">
-              <div class="icon-scene">
-                <span class="icon-3d icon-3d--ribbon" aria-hidden="true"></span>
-              </div>
-              <div class="workshop-card__body">
-                <h3>Dança</h3>
-                <p>Um encontro com o ritmo de cada um.</p>
-                <button
-                  class="text-link"
-                  data-workshop="2"
-                  aria-haspopup="dialog"
-                >
-                  Conhecer a oficina
-                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path
-                      d="M5 12h14m-6-6 6 6-6 6"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </article>
-            <article class="workshop-card">
-              <div class="icon-scene">
-                <span
-                  class="icon-3d icon-3d--connection"
-                  aria-hidden="true"
-                ></span>
-              </div>
-              <div class="workshop-card__body">
-                <h3>Teatro</h3>
-                <p>Dar lugar a outras maneiras de ser.</p>
-                <button
-                  class="text-link"
-                  data-workshop="3"
-                  aria-haspopup="dialog"
-                >
-                  Conhecer a oficina
-                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path
-                      d="M5 12h14m-6-6 6 6-6 6"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </article>
-            <article class="workshop-card">
-              <div class="icon-scene">
-                <span class="icon-3d icon-3d--bridge" aria-hidden="true"></span>
-              </div>
-              <div class="workshop-card__body">
-                <h3>Culinária</h3>
-                <p>Preparar, compartilhar, estar junto.</p>
-                <button
-                  class="text-link"
-                  data-workshop="4"
-                  aria-haspopup="dialog"
-                >
-                  Conhecer a oficina
-                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path
-                      d="M5 12h14m-6-6 6 6-6 6"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </article>
-          </div>
-          <p class="track-hint">
-            Explore as oficinas <span aria-hidden="true">↔</span>
-          </p>
-        </div>
-      </section>
-      <section class="team-section section" id="equipe">
-        <div class="wrap">
-          <div class="section-heading centered">
-            <p class="overline">Quem faz a Ponte</p>
-            <h2>
-              Uma equipe que escuta.<br /><em
-                >Um trabalho que se constrói junto.</em
-              >
-            </h2>
-            <p>
-              Psicanalistas com uma trajetória compartilhada de clínica,<br
-                class="desktop-break"
-              />
-              pesquisa e cuidado através do encontro.
+          <div class="prose">
+            <p data-source-paragraph="5">
+              O trabalho com o grupo realizado pela equipe tem uma história e
+              trajetória embasada na experiência clínica com casos graves,
+              através dos trabalhos de análise, acompanhamento terapêutico e o
+              dispositivo grupal, que pode ser melhor compreendida ao acessar o
+              link <a href="o-grupo.html">o grupo</a>.
             </p>
-          </div>
-          <figure class="team-photo">
-            <img
-              src="assets/images/equipe.webp"
-              srcset="
-                assets/images/equipe-small.webp  768w,
-                assets/images/equipe.webp       1170w
-              "
-              sizes="(max-width: 900px) 90vw, 1000px"
-              width="1170"
-              height="596"
-              alt="Giovanna, Julia, Ligia, Marcela, Silvia, Ivens e Manuela, integrantes da Equipe Ponte"
-              loading="lazy"
-            />
-            <figcaption>
-              Giovanna, Julia, Ligia, Marcela, Silvia, Ivens e Manuela.
-            </figcaption>
-          </figure>
-          <div class="team-bottom">
-            <p>
-              A equipe trabalha com análise em consultório, acompanhamento
-              terapêutico e atendimento em grupo — este último, o trabalho
-              específico da Ponte.
-            </p>
-            <a class="button button--outline" href="#contato"
-              >Fale com a equipe<span class="button__icon"
-                ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path
-                    d="M5 12h14m-6-6 6 6-6 6"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  /></svg></span
-            ></a>
           </div>
         </div>
       </section>
-      <section class="section wrap faq-section" id="perguntas">
-        <div class="section-heading">
-          <p class="overline">Podemos ajudar</p>
-          <h2>Algumas perguntas.<br /><em>Um começo de conversa.</em></h2>
-          <p>
-            Se a sua dúvida não estiver aqui,<br />estamos disponíveis para
-            conversar.
-          </p>
-          <a class="text-link" href="mailto:equipeponte@gmail.com"
-            >Escreva para a equipe
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path
-                d="M5 12h14m-6-6 6 6-6 6"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              /></svg
-          ></a>
-        </div>
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary>
-              Para quem é o trabalho da Ponte?<span aria-hidden="true">+</span>
-            </summary>
-            <p>
-              Para crianças, adolescentes e jovens adultos que apresentam
-              sofrimento ou dificuldades significativas nas relações consigo e
-              com os outros. Cada situação é acolhida em sua particularidade.
-            </p>
-          </details>
-          <details class="faq-item">
-            <summary>
-              É preciso ter um diagnóstico?<span aria-hidden="true">+</span>
-            </summary>
-            <p>
-              Não. Os textos da equipe contemplam tanto pessoas que têm um
-              diagnóstico quanto aquelas que vivem dificuldades nos laços
-              sociais sem um diagnóstico fechado. O ponto de partida é a
-              singularidade de cada pessoa.
-            </p>
-          </details>
-          <details class="faq-item">
-            <summary>
-              As oficinas são aulas de arte?<span aria-hidden="true">+</span>
-            </summary>
-            <p>
-              Não. A proposta é clínica, orientada pela psicanálise. A arte é um
-              meio para favorecer a expressão e o encontro, sem exigir
-              aprendizagem técnica ou desempenho artístico.
-            </p>
-          </details>
-          <details class="faq-item">
-            <summary>
-              Como conhecer melhor o trabalho?<span aria-hidden="true">+</span>
-            </summary>
-            <p>
-              Entre em contato com a equipe pelo e-mail equipeponte@gmail.com.
-              Podemos conversar sobre a proposta, a organização dos grupos e os
-              próximos passos.
-            </p>
-          </details>
-          <details class="faq-item">
-            <summary>
-              Onde fica a Equipe Ponte?<span aria-hidden="true">+</span>
-            </summary>
-            <p>
-              Na Rua Paris, 656, Sumaré, São Paulo — próximo ao metrô Vila
-              Madalena. CEP 01257-040.
-            </p>
-          </details>
-        </div>
-      </section>
-      <section class="contact-section" id="contato">
-        <div class="wrap contact-inner">
-          <p class="overline">Vamos conversar?</p>
-          <h2>Todo encontro começa<br /><em>com uma abertura.</em></h2>
-          <p>
-            Conte um pouco sobre o que você procura.<br />A equipe está aqui
-            para escutar.
-          </p>
-          <a class="button button--mint" href="mailto:equipeponte@gmail.com"
-            >Escreva para a Ponte<span class="button__icon"
+      <section class="section wrap reading-layout" id="oficinas">
+        <div class="reading-aside">
+          <p class="overline">As oficinas</p>
+          <h2>Expressão<br /><em>e descoberta.</em></h2>
+          <a class="button button--primary" href="oficinas.html"
+            >Conheça as oficinas<span class="button__icon"
               ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path
                   d="M5 12h14m-6-6 6 6-6 6"
@@ -536,27 +214,92 @@
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                /></svg></span></a
-          ><a class="contact-email" href="mailto:equipeponte@gmail.com"
-            >equipeponte@gmail.com</a
-          >
-          <div class="contact-address">
-            <span
-              >Rua Paris, 656 · Sumaré<br />São Paulo · SP · CEP 01257-040</span
-            ><a
-              href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Paris+656+Sumare+Sao+Paulo"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Como chegar <span aria-hidden="true">↗</span
-              ><span class="sr-only"> (abre em nova aba)</span></a
-            >
+                /></svg></span
+          ></a>
+        </div>
+        <div class="prose">
+          <p data-source-paragraph="6">
+            Todas as oficinas da equipe são ofertas para que cada um possa se
+            investigar e se descobrir em seus gostos, interesses e aptidões, de
+            modo a trazer à tona seus gestos espontâneos e particulares, para
+            além de suas dificuldades e traços limitantes de qualquer
+            diagnóstico que o acompanhe. Com isso, visa tratar os impasses
+            subjetivos e expandir as possibilidades de se colocar junto ao outro
+            e no mundo.
+          </p>
+          <p data-source-paragraph="7">
+            O espaço de tratamento em saúde mental oferecido, fundamentado pela
+            teoria psicanalítica, se caracteriza como um trabalho de
+            subjetivação a partir da promoção de diferentes estímulos que cada
+            oficina cuidadosamente estudada e elaborada para isso oferece. O
+            objetivo é fornecer ambiente e intervenção que auxiliem cada
+            participante a descobrir e trazer o que é mais particular de si em
+            suas expressões e que, por conseguinte, avanços psíquicos em suas
+            formas de se expressar e se relacionar de modo geral sejam
+            conquistados.
+          </p>
+          <p data-source-paragraph="8">
+            As oficinas não visam o ensinamento das ferramentas artísticas no
+            sentido de uma aprendizagem pedagógica e a construção de repertório
+            artístico rigoroso e/ou profissionalizante, ainda que esse possa ser
+            um efeito secundário.
+          </p>
+          <p data-source-paragraph="9">
+            Para saber um pouco mais de cada oficina e de como cada uma delas
+            pode favorecer o tratamento clínico em questão, você pode acessar o
+            link <a href="oficinas.html">oficinas</a>.
+          </p>
+        </div>
+      </section>
+      <section class="section team-section" id="equipe">
+        <div class="wrap reading-layout">
+          <div class="reading-aside">
+            <p class="overline">Conheça a Ponte</p>
+            <h2>Pesquisa,<br /><em>clínica e encontros.</em></h2>
           </div>
+          <div class="prose">
+            <p data-source-paragraph="10">
+              A fundamentação teórica para a construção desse trabalho ao redor
+              do público-alvo em questão, das oficinas, assim como outros textos
+              e publicações da equipe e seus membros podem ser encontrados no
+              link <a href="textos-e-publicacoes.html">textos e publicações</a>.
+            </p>
+            <p data-source-paragraph="11">
+              Para conhecer melhor os membros da equipe é só acessar o link
+              <a href="a-equipe.html">a equipe</a>.
+            </p>
+            <p data-source-paragraph="12">
+              Se você tem interesse em falar conosco, acesse o link contato para
+              nos enviar um e-mail ou entre em
+              <a href="contato.html">contato</a> por meio dos telefones e redes
+              sociais.
+            </p>
+            <p data-source-paragraph="13">Atenciosamente,</p>
+            <p data-source-paragraph="14">A Equipe</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section small-contact">
+        <div class="wrap contact-inner">
+          <p class="overline">Contato</p>
+          <h2>Escreva <em>para nós.</em></h2>
+          <a class="button button--mint" href="contato.html"
+            >Fale com a equipe<span class="button__icon"
+              ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M5 12h14m-6-6 6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg></span
+          ></a>
         </div>
       </section>
     </main>
     <footer class="footer wrap">
       <div class="footer-top">
-        <a class="brand" href="./"
+        <a class="brand" href="index.html" aria-label="Equipe Ponte — Home"
           ><img
             src="assets/images/logo.png"
             width="48"
@@ -567,30 +310,17 @@
         <p>Psicanálise, arte e encontros.</p>
         <a href="#conteudo">Voltar ao início ↑</a>
       </div>
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <a href="index.html">Home</a><a href="a-equipe.html">A Equipe</a
+        ><a href="o-grupo.html">O Grupo</a><a href="oficinas.html">Oficinas</a
+        ><a href="textos-e-publicacoes.html">Textos e publicações</a
+        ><a href="contato.html">Contato</a>
+      </nav>
       <div class="footer-bottom">
-        <span>© 2026 Equipe Ponte</span><span>São Paulo, Brasil</span>
+        <span>© 2026 Equipe Ponte</span
+        ><a href="mailto:equipeponte@gmail.com">equipeponte@gmail.com</a
+        ><span>São Paulo, Brasil</span>
       </div>
     </footer>
-    <dialog id="workshop-dialog" aria-labelledby="dialog-title">
-      <div class="dialog-inner">
-        <button class="dialog-close" aria-label="Fechar detalhes da oficina">
-          ×
-        </button>
-        <p class="overline">Oficinas da Ponte</p>
-        <h2 id="dialog-title"></h2>
-        <p id="dialog-description"></p>
-        <a class="button button--primary" href="mailto:equipeponte@gmail.com"
-          >Conversar com a equipe<span class="button__icon"
-            ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path
-                d="M5 12h14m-6-6 6 6-6 6"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              /></svg></span
-        ></a>
-      </div>
-    </dialog>
   </body>
 </html>

@@ -4,9 +4,9 @@
 - Publicar apenas `public/`; materiais de trabalho ficam fora da raiz pública.
 - Usar os tokens e componentes de `public/assets/styles.css` antes de criar padrões.
 - Design system visual: `public/design-system.html`. Direção: `DESIGN.md`.
-- Conteúdo baseado nos documentos fornecidos, com textos resumidos para navegação.
+- Conteúdo final transcrito do DOCX; conferir com scripts/check_content.py.
 - Não inventar depoimentos, estatísticas clínicas, CRPs, telefones ou disponibilidade.
-- Verificar larguras de 320 a 1920px. Evitar overflow fora do carrossel deliberado.
+- Verificar larguras de 320 a 1920px. Evitar overflow horizontal das páginas.
 - Manter navegação por teclado, foco visível, textos alternativos e reduced motion.
 - Não enviar formulários sensíveis: o contato inicial usa mailto explícito.
 - Manter `noindex` até aprovação de lançamento e definição do domínio definitivo.

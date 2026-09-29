@@ -15,7 +15,7 @@ Não há instalação de dependências nem etapa de build.
 
 - `public/`: único diretório publicado; Home, catálogo, assets e regras de indexação.
 - `public/assets/styles.css`: fontes, tokens, componentes e layouts responsivos.
-- `public/assets/site.js`: menu, carrossel, detalhes das oficinas e cópia de cores.
+- `public/assets/site.js`: menu, formulário de contato e cópia de cores.
 - `docs/frontend/`: decisões visuais, conteúdo, procedência e validação.
 - `conteudo/`, `Links/`, `site-antigo/`: materiais de referência locais, fora do deploy.
 
@@ -38,5 +38,22 @@ python3 scripts/check_site.py
 ```
 
 Faça também revisão visual em 390, 768, 1280 e 1920px, teste menu com teclado,
-Escape/retorno de foco do diálogo, carrossel e FAQ. O contato usa o e-mail confirmado
+páginas das oficinas e validação do formulário. O contato usa o e-mail confirmado
 nos documentos. WhatsApp depende do fornecimento do número oficial.
+
+## Páginas e conteúdo final
+
+Menu: Home | A Equipe | O Grupo | Oficinas | Textos e publicações | Contato.
+As cinco oficinas possuem páginas próprias com seus textos integrais.
+
+Fonte transcrita: `content/site-content.json`. Para regenerar após editar conteúdo:
+
+```sh
+python3 scripts/build_site.py
+python3 scripts/check_site.py
+node --test tests/contact.test.cjs
+```
+
+O site publicado já contém HTML pronto; Python não é necessário na hospedagem.
+Detalhes e pendências: `docs/frontend/CONTENT.md`.
+Formulário e ativação do envio direto: `docs/frontend/CONTACT_SETUP.md`.

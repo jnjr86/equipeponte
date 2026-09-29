@@ -45,9 +45,9 @@ Espaçamento de 4 a 96px; raios 12/24/32px e cápsula. Transições 180/320ms.
   active, focus-visible e disabled. Links navegam; buttons executam ações.
 - **Menu:** navegação inline no desktop, painel expansível em telas compactas;
   `aria-expanded`, fechamento por Escape, seleção ou clique externo.
-- **Oficina:** título, descrição, ícone e botão que abre `dialog`. Escape fecha,
-  foco retorna ao acionador; CTA abre o e-mail da equipe.
-- **Carrossel:** rolagem nativa, scroll snap e botões com limites desabilitados.
+- **Oficina:** cartão com foto e link para página de leitura com o texto integral.
+- **Formulário:** nome, e-mail e mensagem; validação nativa e estados honestos.
+  Mailto explícito enquanto envio direto não estiver configurado.
 - **FAQ:** `details`/`summary` nativos; leitura e operação sem JavaScript.
 - **Ícone 3D:** atlas original, seis células; manter proporção e texto adjacente.
   Elementos decorativos usam `aria-hidden`; não representar pacientes.
@@ -63,7 +63,8 @@ web própria, especialmente Victor Serif, antes de lançamento comercial.
 
 ## Escopo
 
-A Home e o catálogo `/design-system.html` compartilham os mesmos tokens e estilos.
-A proposta visual é uma primeira versão para revisão. WhatsApp, perfis individuais,
-textos/publicações e galerias completas dependem de conteúdo adicional.
+As 11 páginas e o catálogo `/design-system.html` compartilham tokens e estilos.
+Menu: Home, A Equipe, O Grupo, Oficinas, Textos e publicações, Contato.
+Cinco oficinas possuem páginas próprias; equipe possui sete perfis.
+WhatsApp e PDFs dependem de conteúdo adicional. Veja CONTENT.md e CONTACT_SETUP.md.
 Canonical/sitemap usam o domínio provisório da Vercel. Preview está em noindex.

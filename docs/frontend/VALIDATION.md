@@ -1,23 +1,27 @@
 # Validação — 28/09/2026
 
-## Verificado
+## Versão multipágina
 
-- Sintaxe JavaScript: `node --check public/assets/site.js`.
-- Referências locais HTML/CSS, âncoras, h1 único e alt em imagens: `python3 scripts/check_site.py`.
-- Revisão visual da Home em desktop (1280px) e celular (390px).
-- Sem overflow horizontal da página em 320, 390, 768 e 1920px; carrossel rola dentro de seu contêiner.
-- Menu mobile abre, fecha ao selecionar seção e atualiza aria-expanded.
-- Detalhes da oficina abrem em diálogo; Escape fecha e devolve foco ao acionador.
-- Carrossel avança e habilita o botão anterior após rolar.
-- FAQ expande a resposta selecionada.
-- Catálogo: botão copia `#6ec597` e anuncia confirmação; sem overflow em 390px.
+- `python3 scripts/check_site.py`: referências locais HTML/CSS, âncoras, h1 único e alt.
+- `python3 scripts/check_content.py`: 33 parágrafos integrais do DOCX preservados e menu
+  exato de seis itens em todas as 11 páginas de conteúdo.
+- `node --check public/assets/site.js`: sintaxe válida.
+- `node --test tests/contact.test.cjs`: quatro testes aprovados, cobrindo validação,
+  método/origem/tamanho, falta de configuração, destinatário fixo e erro do provedor.
+  Fetch simulado; nenhum e-mail real enviado.
+- Todas as 11 páginas abertas em 390px: títulos e seis itens do menu presentes,
+  sem overflow horizontal da página.
+- Revisão visual desktop: Home, A Equipe, Oficinas e catálogo do design system.
+- Revisão visual mobile: oficinas, contato e validação de campos obrigatórios.
+- Formulário vazio: envio impedido, foco no campo Nome, campos inválidos identificados.
+- Menu mobile: abre/fecha e navega para as páginas; aria-expanded atualizado.
 - Contrastes sólidos: Cinza01/Verde01 8,22:1; Cinza01/Cinza02 8,34:1;
   branco/Verde02 7,13:1; branco/Cinza01 17,10:1; texto secundário/superfície 6,05:1.
-- Assets locais, imagens WebP e fontes WOFF2; total de public aproximadamente 1,2 MB.
+- Cópia de cor no catálogo: confirmação acessível e código #6ec597 correto.
 
 ## Limites
 
 Não foi executado Lighthouse nem auditoria completa de WCAG/leitor de tela.
 Contraste sobre fotografia exige revisão contextual; a Home inclui overlay escuro.
-Os conteúdos são uma adaptação editorial inicial dos materiais fornecidos.
-Licença web própria das fontes, domínio final e número de WhatsApp aguardam confirmação.
+Envio real depende da configuração do provedor. PDFs não fornecidos.
+A licença web própria das fontes e o domínio definitivo ainda precisam ser confirmados.
