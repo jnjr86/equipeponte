@@ -2034,3 +2034,13 @@ a:not(.button):not(.nav-contact):hover {
   background: var(--verde-01);
   color: var(--ink);
 }
+
+/* Contact call-to-action hover. */
+.small-contact .button--mint:hover {
+  background: #000000;
+  border-color: #000000;
+  color: var(--white);
+}
+.small-contact .button--mint:hover .button__icon {
+  color: var(--white);
+}
