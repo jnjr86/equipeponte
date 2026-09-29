@@ -1,21 +1,28 @@
 @font-face {
-  font-family: Aspekta;
-  src: url("fonts/aspekta-regular.woff2") format("woff2");
+  font-family: Switzer;
+  src: url("fonts/switzer-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: Aspekta;
-  src: url("fonts/aspekta-medium.woff2") format("woff2");
+  font-family: Switzer;
+  src: url("fonts/switzer-medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: Aspekta;
-  src: url("fonts/aspekta-semibold.woff2") format("woff2");
+  font-family: Switzer;
+  src: url("fonts/switzer-semibold.woff2") format("woff2");
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Switzer;
+  src: url("fonts/switzer-bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -45,7 +52,7 @@
   --ink: var(--cinza-01);
   --muted: #46606c;
   --border: #ccd9d5;
-  --font-body: Aspekta, Arial, sans-serif;
+  --font-body: Switzer, Arial, sans-serif;
   --font-display: "Victor Serif", Georgia, serif;
   --text-sm: 0.875rem;
   --text-base: 1rem;

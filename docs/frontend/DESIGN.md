@@ -33,7 +33,7 @@ médica promocional e termos de implementação na interface pública.
 | `--surface` | `#f0f5f3` | Superfícies e ícones |
 | `--surface-mint` | `#e4f0e9` | Seção da equipe |
 
-Aspekta 400/500/600: corpo, navegação, ações e títulos de apoio.
+Switzer 400/500/600: corpo, navegação, ações e títulos de apoio.
 Victor Serif 500 regular/itálico: expressão editorial e títulos.
 Escala fluida via `clamp`; corpo 16px com entrelinha 1.6.
 Grid até 1280px; 3/2/1 colunas conforme espaço. Breakpoints 600, 900, 1100 e 1600px.
@@ -68,3 +68,5 @@ Menu: Home, A Equipe, O Grupo, Oficinas, Textos e publicações, Contato.
 Cinco oficinas possuem páginas próprias; equipe possui sete perfis.
 WhatsApp e PDFs dependem de conteúdo adicional. Veja CONTENT.md e CONTACT_SETUP.md.
 Canonical/sitemap usam o domínio provisório da Vercel. Preview está em noindex.
+
+Switzer: arquivos WOFF2 oficiais obtidos da Fontshare (https://www.fontshare.com/fonts/switzer), hospedados localmente em `public/assets/fonts/`. Pesos 400, 500, 600 e 700, com `font-display: swap`.
