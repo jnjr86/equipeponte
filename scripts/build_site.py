@@ -14,7 +14,9 @@ ARROW = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h
 def button(text, href, variant='primary'):
     return f'<a class="button button--{variant}" href="{href}">{text}<span class="button__icon">{ARROW}</span></a>'
 
-def brand():
+def brand(footer=False):
+    if footer:
+        return '<a class="brand brand--footer" href="index.html" aria-label="Equipe Ponte — Home"><img src="assets/images/logo-horizontal.png" width="1436" height="597" alt=""></a>'
     return '<a class="brand" href="index.html" aria-label="Equipe Ponte — Home"><img src="assets/images/logo.png" width="48" height="48" alt=""><span>equipe <strong>ponte</strong></span></a>'
 
 def header(current):
@@ -28,7 +30,7 @@ def head(title, description, current):
 
 def footer():
     links=''.join(f'<a href="{url}">{name}</a>' for name,url in MENU)
-    return f'<footer class="footer wrap"><div class="footer-top">{brand()}<p>Psicanálise, arte e encontros.</p><a href="#conteudo">Voltar ao início ↑</a></div><nav class="footer-nav" aria-label="Navegação do rodapé">{links}</nav><div class="footer-bottom"><span>© 2026 Equipe Ponte</span><a href="mailto:equipeponte@gmail.com">equipeponte@gmail.com</a><span>São Paulo, Brasil</span></div></footer></body></html>'
+    return f'<footer class="footer wrap"><div class="footer-top">{brand(footer=True)}<p>Psicanálise, arte e encontros.</p><a href="#conteudo">Voltar ao início ↑</a></div><nav class="footer-nav" aria-label="Navegação do rodapé">{links}</nav><div class="footer-bottom"><span>© 2026 Equipe Ponte</span><a href="mailto:equipeponte@gmail.com">equipeponte@gmail.com</a><span>São Paulo, Brasil</span></div></footer></body></html>'
 
 def para(i):
     text=escape(P[i])
