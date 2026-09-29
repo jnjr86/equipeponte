@@ -1491,6 +1491,9 @@ dialog::backdrop {
   line-height: 1.85;
   overflow-wrap: break-word;
 }
+#sobre [data-source-paragraph="3"] {
+  font-weight: 500;
+}
 .prose p {
   line-height: 1.85;
   margin-bottom: 24px;
