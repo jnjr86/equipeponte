@@ -763,7 +763,7 @@ figcaption {
 .contact-section {
   margin: 0 20px;
   border-radius: var(--radius-panel);
-  background: var(--ink);
+  background: var(--verde-02);
   color: var(--white);
   position: relative;
   overflow: hidden;
@@ -2003,4 +2003,32 @@ button:not(:disabled):hover {
 .button:hover .button__icon {
   background: var(--verde-01);
   color: var(--ink);
+}
+
+/* Footer surface shared by every page, including the design system. */
+.footer.wrap {
+  width: 100%;
+  padding-inline: max(var(--page-gutter), calc((100% - var(--content-width)) / 2));
+  background: var(--cinza-01);
+  color: var(--white);
+}
+.footer-top > p,
+.footer-bottom,
+.footer-nav {
+  color: var(--white);
+}
+/* Navigation hover keeps the original surface and highlights its underline. */
+.site-header #main-nav > a:not(.nav-contact):hover {
+  background: transparent;
+  color: var(--ink);
+}
+.site-header #main-nav > a:hover:after {
+  background: var(--verde-01);
+}
+.site-header #main-nav > .nav-contact:hover {
+  background: var(--ink);
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--verde-01);
+  text-underline-offset: 5px;
 }
