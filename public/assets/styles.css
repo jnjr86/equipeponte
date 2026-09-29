@@ -2044,3 +2044,12 @@ a:not(.button):not(.nav-contact):hover {
 .small-contact .button--mint:hover .button__icon {
   color: var(--white);
 }
+
+/* Let the circular header mark overlap the navigation's lower edge. */
+.site-header .brand img {
+  transform: translateY(18px) scale(1.5);
+  transform-origin: left center;
+  margin-right: 24px;
+  position: relative;
+  z-index: 1;
+}
