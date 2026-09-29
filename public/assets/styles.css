@@ -841,7 +841,7 @@ figcaption {
   gap: 24px;
 }
 .footer .brand--footer img {
-  width: 288px;
+  width: 316.8px;
   max-width: 100%;
   height: auto;
   border-radius: 0;
@@ -1540,6 +1540,7 @@ dialog::backdrop {
 }
 .small-contact {
   margin-top: 64px;
+  margin-bottom: 64px;
 }
 .small-contact .contact-inner {
   padding: 64px 0;
@@ -1793,6 +1794,8 @@ dialog::backdrop {
 }
 .footer-nav {
   display: flex;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   gap: 16px 28px;
   margin-top: 32px;
