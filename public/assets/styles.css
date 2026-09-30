@@ -347,25 +347,24 @@ p {
   flex-direction: column;
   align-items: center;
 }
-.hero:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background: url("images/hero-sky.webp") center 55% / cover no-repeat;
+.hero::before,
+.hero::after {
+  content: none;
 }
-.hero:after {
-  content: "";
+.hero {
+  background: var(--cinza-01);
+}
+.hero-fluid {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   z-index: -1;
-  background: linear-gradient(
-    180deg,
-    #081e2920 0%,
-    #081e2948 45%,
-    #081e2940 72%,
-    #081e2908 100%
-  );
+  pointer-events: none;
+  opacity: 0.6;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-fluid { display: none; }
 }
 .site-header {
   width: calc(100% - 32px);
