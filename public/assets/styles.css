@@ -2060,11 +2060,17 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   padding-block: calc(var(--space-4) + 11px);
 }
 
-/* Align the large panels with the content grid on wide monitors. */
+/* Align the contact panel with the content grid on wide monitors. */
 @media (min-width: 1440px) {
-  .hero,
   .contact-section.small-contact {
     max-width: var(--content-width);
     margin-inline: auto;
   }
+}
+
+/* Full-width Hero at every viewport size. */
+.hero {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
 }
