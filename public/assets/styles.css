@@ -73,6 +73,7 @@
   --page-gutter: clamp(1.25rem, 4.5vw, 5rem);
   --content-width: 1280px;
   --radius-sm: 12px;
+  --radius-footer: 16px;
   --radius-card: 24px;
   --radius-panel: 32px;
   --radius-pill: 999px;
@@ -2008,6 +2009,7 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
 /* Footer surface shared by every page, including the design system. */
 .footer.wrap {
   width: 100%;
+  border-radius: var(--radius-footer) var(--radius-footer) 0 0;
   padding-inline: max(var(--page-gutter), calc((100% - var(--content-width)) / 2));
   background: var(--cinza-01);
   color: var(--white);
