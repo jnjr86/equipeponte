@@ -2181,7 +2181,8 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   mix-blend-mode: normal;
 }
 
-.workshops-intro .prose > p:first-child {
+.workshops-intro .prose > p:first-child,
+.prose > p[data-source-paragraph="17"] {
   font-family: var(--font-body);
   font-weight: 500;
 }
