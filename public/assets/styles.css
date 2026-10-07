@@ -348,9 +348,22 @@ p {
   flex-direction: column;
   align-items: center;
 }
-.hero::before,
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background: url("images/hero-pattern.svg") center / 1000px repeat;
+  opacity: 0.6;
+  pointer-events: none;
+}
 .hero::after {
-  content: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: radial-gradient(ellipse at center, #081e29 10%, rgba(8, 30, 41, 0.9) 45%, rgba(8, 30, 41, 0.25) 100%);
+  pointer-events: none;
 }
 .hero {
   background: var(--cinza-01);
@@ -1418,11 +1431,6 @@ dialog::backdrop {
   *:after {
     animation: none !important;
     transition: none !important;
-  }
-}
-@media (max-width: 600px) {
-  .hero:before {
-    background-image: url("images/hero-sky-small.webp");
   }
 }
 /* Multi-page editorial layouts, using the shared design tokens. */
