@@ -73,14 +73,25 @@
       const isTitle = element.matches('h1,h2');
       const isImage = element.matches('.editorial-photo > img, .photo-card > img');
       const targets = isTitle ? lines(element) : [element];
+      // Follow the layout's left/right placement; centered photographs alternate.
+      const bounds = element.getBoundingClientRect();
+      const center = bounds.left + bounds.width / 2;
+      const imageIndex = Array.from(document.querySelectorAll('.editorial-photo > img,.photo-card > img')).indexOf(element);
+      const side = Math.abs(center - innerWidth / 2) < innerWidth * 0.08
+        ? (imageIndex % 2 === 0 ? -1 : 1)
+        : (center < innerWidth / 2 ? -1 : 1);
+      const lateral = element.closest('.reading-aside') && !isTitle;
       const from = isTitle
         ? { opacity: 0, y: compact ? 20 : 40, clipPath: 'inset(0 0 100% 0)' }
         : isImage
-          ? { opacity: 0, scale: 1.04, clipPath: 'inset(0 0 100% 0)' }
-          : { opacity: 0, y: distance };
+          ? { opacity: 0, x: side * (compact ? 14 : 40), scale: 1.04,
+              clipPath: side < 0 ? 'inset(0 100% 0 0)' : 'inset(0 0 0 100%)' }
+          : lateral
+            ? { opacity: 0, x: side * (compact ? 10 : 24), y: 0 }
+            : { opacity: 0, y: distance };
       const tween = gsap.fromTo(targets, from, {
-        opacity: 1, y: 0, scale: 1, clipPath: 'inset(0 0 0% 0)',
-        duration: isTitle ? (compact ? 0.7 : 1) : duration,
+        opacity: 1, x: 0, y: 0, scale: 1, clipPath: 'inset(0 0 0% 0)',
+        duration: isTitle || isImage ? (compact ? 0.7 : 1) : duration,
         ease: isTitle || isImage ? 'power4.out' : 'power3.out',
         delay, stagger: isTitle ? stagger : 0,
         clearProps: 'opacity,transform,clipPath',

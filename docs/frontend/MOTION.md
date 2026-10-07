@@ -8,7 +8,7 @@ A camada mantém o design aprovado e usa `assets/motion.css` e `assets/motion.js
 - Hero/títulos: máscara vertical, linhas explícitas reveladas em sequência no desktop. O texto e a ênfase são preservados; no celular mantém-se a quebra natural original.
 - `.prose`: entrada por parágrafo, sem separar palavras; duração 0,8 s.
 - `.reading-aside`, headings, pessoas, oficinas e publicações: sequências de 0,09 s, ativadas em `top 82%`, uma única vez.
-- Fotografias: máscara e escala temporária 1,04 → 1. Figuras principais têm deslocamento de −12 a +12 px com scrub 1,1, mantendo o recorte original da foto.
+- Fotografias: entrada lateral conforme a posição no grid (esquerda/direita; imagens centrais alternam), máscara horizontal e escala temporária 1,04 → 1. Deslocamento de 40 px no desktop e 14 px no celular, duração 1 s/0,7 s. Labels, ícones e CTAs das colunas laterais entram de forma discreta com 24 px/10 px. Figuras principais têm deslocamento de −12 a +12 px com scrub 1,1, mantendo o recorte original da foto.
 - Lenis: lerp 0,1 apenas com apontador preciso e viewport acima de 600 px. Touch permanece nativo. Não há pin, snapping ou scroll obrigatório.
 - Header: threshold de 70 px e fade/translate de 0,4 s. Mantém a posição original no documento: não adiciona fixação ou sticky.
 - Menu: abertura 0,3 s com links sequenciais e fechamento inverso. `aria-expanded`, Escape e foco continuam no script global `site.js`.
