@@ -2082,3 +2082,22 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   max-width: none;
   margin-inline: 0;
 }
+
+/* Decorative contact pattern; keep the reading area calm. */
+.small-contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("images/contact-pattern.svg") center / cover no-repeat;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.small-contact::after {
+  inset: 0;
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: inherit;
+  transform: none;
+  background: radial-gradient(ellipse at center, #2c5d78 10%, rgba(44, 93, 120, 0.9) 40%, rgba(44, 93, 120, 0.15) 100%);
+}
