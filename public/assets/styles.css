@@ -2166,3 +2166,10 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   }
   .small-contact .home-contact-heading h2 { font-size: clamp(1.8rem, 6vw, 2.5rem); }
 }
+
+.publication-empty > .icon-3d--events {
+  background-image: url("images/eventos-icon.png");
+  background-size: contain;
+  background-position: center;
+  mix-blend-mode: normal;
+}
