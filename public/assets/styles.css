@@ -2108,3 +2108,31 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   background-position: center;
   mix-blend-mode: normal;
 }
+
+/* Workshop icons sit beside their titles without changing photo dimensions. */
+.photo-card > span {
+  gap: 12px;
+}
+.photo-card .workshop-title-icon {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  object-fit: contain;
+}
+.photo-card strong {
+  margin-right: auto;
+}
+.photo-card > span > svg {
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .photo-card > span { gap: 6px; font-size: 18px; }
+  .photo-card .workshop-title-icon {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
+  }
+}
+@media (max-width: 380px) {
+  .photo-grid { grid-template-columns: 1fr; }
+}
