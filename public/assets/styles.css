@@ -2101,3 +2101,10 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   transform: none;
   background: radial-gradient(ellipse at center, #2c5d78 10%, rgba(44, 93, 120, 0.9) 40%, rgba(44, 93, 120, 0.15) 100%);
 }
+
+.publication-empty > .icon-3d--publications {
+  background-image: url("images/textos-icon.png");
+  background-size: contain;
+  background-position: center;
+  mix-blend-mode: normal;
+}

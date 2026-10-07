@@ -84,7 +84,7 @@ for name,slug,index,icon in workshops:
 # Publications: no PDFs supplied. No fake titles or disabled download controls.
 items=DATA.get('publications',[])
 links=''.join(f'<a class="publication-link" href="{escape(x["file"],quote=True)}" target="_blank" rel="noopener">{escape(x["title"])} <span>PDF ↗</span></a>' for x in items)
-body='<section class="wrap publications">'+(links if items else '<div class="publication-empty"><span class="icon-3d icon-3d--chat" aria-hidden="true"></span><p>As publicações estarão disponíveis em breve.</p></div>')+'</section>'
+body='<section class="wrap publications">'+(links if items else '<div class="publication-empty"><span class="icon-3d icon-3d--publications" aria-hidden="true"></span><p>As publicações estarão disponíveis em breve.</p></div>')+'</section>'
 page('Textos e publicações','Textos e publicações da Equipe Ponte sobre a clínica psicanalítica e o trabalho com oficinas.','textos-e-publicacoes.html',body)
 
 # Events: awaiting editorial content.
