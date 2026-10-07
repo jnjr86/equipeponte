@@ -1,11 +1,11 @@
-"""Verify DOCX prose and the six-item primary menu across generated pages."""
+"""Verify DOCX prose and the seven-item primary menu across generated pages."""
 from pathlib import Path
 from html.parser import HTMLParser
 import json,re
 ROOT=Path(__file__).resolve().parents[1]
 source=json.loads((ROOT/'content/site-content.json').read_text())['paragraphs']
 normalize=lambda s: re.sub(r'\s+',' ',s).strip()
-expected_menu=['Home','A Equipe','O Grupo','Oficinas','Textos e publicações','Contato']
+expected_menu=['Home','A Equipe','O Grupo','Oficinas','Textos e publicações','Eventos e Exposições','Contato']
 required={3,4,5,6,7,8,9,10,11,12,13,14,17,18,19,21,22,23,27,28,29,30,31,33,35,38,40,42,44,46,49,67,70}
 found=set()
 class Audit(HTMLParser):
@@ -30,4 +30,4 @@ for page in (ROOT/'public').glob('*.html'):
  audit=Audit();audit.feed(page.read_text())
  assert audit.menu==expected_menu,(page.name,audit.menu)
 assert required<=found, f'Missing paragraphs: {required-found}'
-print(f'PASS: {len(required)} final DOCX paragraphs preserved; exact primary menu on 11 pages.')
+print(f'PASS: {len(required)} final DOCX paragraphs preserved; exact primary menu on 12 pages.')

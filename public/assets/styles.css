@@ -1813,7 +1813,7 @@ dialog::backdrop {
 .footer-nav a:hover {
   text-decoration: underline;
 }
-@media (min-width: 901px) and (max-width: 1100px) {
+@media (min-width: 901px) and (max-width: 1200px) {
   .site-header {
     position: relative;
   }
