@@ -2076,11 +2076,18 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   }
 }
 
-/* Full-width Hero at every viewport size. */
+/* Hero spacing around the outer panel. */
 .hero {
-  width: 100%;
+  width: auto;
   max-width: none;
-  margin-inline: 0;
+  margin-top: 80px;
+  margin-inline: 80px;
+}
+@media (max-width: 600px) {
+  .hero {
+    margin-top: 24px;
+    margin-inline: 16px;
+  }
 }
 
 /* Decorative contact pattern; keep the reading area calm. */
