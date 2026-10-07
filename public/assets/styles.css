@@ -2136,3 +2136,33 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
 @media (max-width: 380px) {
   .photo-grid { grid-template-columns: 1fr; }
 }
+
+.home-section-icon {
+  display: block;
+  width: 120px;
+  height: 180px;
+  object-fit: contain;
+  margin: 24px 0 16px;
+}
+#grupo .home-section-icon { margin-top: 0; }
+.home-contact-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.home-contact-heading .home-section-icon--contact {
+  width: 144px;
+  height: 216px;
+  margin: 0;
+  flex-shrink: 0;
+}
+.home-contact-heading h2 { margin: 0; }
+@media (max-width: 600px) {
+  .home-contact-heading { gap: 12px; }
+  .home-contact-heading .home-section-icon--contact {
+    width: 96px;
+    height: 144px;
+  }
+  .small-contact .home-contact-heading h2 { font-size: clamp(1.8rem, 6vw, 2.5rem); }
+}
