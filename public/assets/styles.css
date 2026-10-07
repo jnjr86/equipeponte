@@ -2205,3 +2205,10 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
     width: calc(100% - 24px);
   }
 }
+
+.schedule-note > .icon-3d--calendar {
+  background-image: url("images/calendar-icon.png");
+  background-size: contain;
+  background-position: center;
+  mix-blend-mode: normal;
+}

@@ -70,7 +70,7 @@ body='<section class="wrap team-overview">'+picture('equipe','Giovanna, Julia, L
 page('A Equipe','Conheça as psicanalistas e os psicanalistas que compõem a Equipe Ponte.','a-equipe.html',body)
 
 # Group.
-body='<section class="wrap editorial-grid"><div class="prose">'+paragraphs([17,18,19])+'</div>'+picture('obra-pedro','Obra de Pedro M.: figuras humanas desenhadas em diversas cores','Obra de Pedro M.',640,640,True)+'</section><section class="section wrap reading-layout"><div class="reading-aside"><h2>Por que<br><em>em grupo?</em></h2></div><div class="prose">'+paragraphs([21,22,23])+'</div></section><section class="wrap schedule-note"><span class="icon-3d icon-3d--connection" aria-hidden="true"></span><div><h2>Quartas e sextas-feiras</h2><p>Dois encontros semanais, com três horas de duração em cada dia.</p></div>'+button('Fale com a equipe','contato.html')+'</section>'+cta()
+body='<section class="wrap editorial-grid"><div class="prose">'+paragraphs([17,18,19])+'</div>'+picture('obra-pedro','Obra de Pedro M.: figuras humanas desenhadas em diversas cores','Obra de Pedro M.',640,640,True)+'</section><section class="section wrap reading-layout"><div class="reading-aside"><h2>Por que<br><em>em grupo?</em></h2></div><div class="prose">'+paragraphs([21,22,23])+'</div></section><section class="wrap schedule-note"><span class="icon-3d icon-3d--calendar" aria-hidden="true"></span><div><h2>Quartas e sextas-feiras</h2><p>Dois encontros semanais, com três horas de duração em cada dia.</p></div>'+button('Fale com a equipe','contato.html')+'</section>'+cta()
 page('O Grupo','Conheça o trabalho em grupo da Equipe Ponte, sua trajetória e a proposta clínica orientada pela psicanálise.','o-grupo.html',body)
 
 # Workshops, ordered exactly as in the DOCX.
