@@ -2191,3 +2191,17 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   font-style: italic;
   font-weight: 500;
 }
+
+/* Inset of the navigation panel within the Hero. */
+.hero > .site-header {
+  margin-top: 40px;
+  margin-inline: 40px;
+  width: calc(100% - 80px);
+}
+@media (max-width: 600px) {
+  .hero > .site-header {
+    margin-top: 16px;
+    margin-inline: 12px;
+    width: calc(100% - 24px);
+  }
+}
