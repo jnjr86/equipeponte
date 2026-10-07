@@ -902,13 +902,13 @@ figcaption {
 }
 .footer-social-icon--email {
   --social-icon: url("images/email-icon.svg");
-  width: 31.5px;
-  height: 31.5px;
+  width: 28.35px;
+  height: 28.35px;
 }
 .footer-social-icon--facebook {
   --social-icon: url("images/facebook-icon.svg");
-  width: 25px;
-  height: 25px;
+  width: 27.5px;
+  height: 27.5px;
 }
 .footer-social-icon--instagram { --social-icon: url("images/instagram-icon.svg"); }
 dialog {
