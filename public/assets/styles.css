@@ -2173,3 +2173,8 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   background-position: center;
   mix-blend-mode: normal;
 }
+
+.workshops-intro .prose > p:first-child {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
