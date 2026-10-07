@@ -2178,3 +2178,9 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   font-family: var(--font-body);
   font-weight: 500;
 }
+
+.photo-card strong {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+}
