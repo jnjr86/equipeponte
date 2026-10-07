@@ -868,6 +868,7 @@ figcaption {
 }
 .footer-bottom {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-top: 1px solid var(--border);
   margin-top: 40px;
@@ -875,6 +876,33 @@ figcaption {
   color: var(--muted);
   font-size: 12px;
 }
+.footer-social {
+  display: flex;
+  gap: 8px;
+}
+.footer-social a {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--white);
+  transition: color 0.25s ease;
+}
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: var(--verde-01);
+}
+.footer-social-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: currentColor;
+  -webkit-mask: var(--social-icon) center / contain no-repeat;
+  mask: var(--social-icon) center / contain no-repeat;
+}
+.footer-social-icon--email { --social-icon: url("images/email-icon.svg"); }
+.footer-social-icon--facebook { --social-icon: url("images/facebook-icon.svg"); }
+.footer-social-icon--instagram { --social-icon: url("images/instagram-icon.svg"); }
 dialog {
   border: 0;
   border-radius: var(--radius-card);

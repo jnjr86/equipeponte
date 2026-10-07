@@ -30,7 +30,7 @@ def head(title, description, current):
 
 def footer():
     links=''.join(f'<a href="{url}">{name}</a>' for name,url in MENU)
-    return f'<footer class="footer wrap"><div class="footer-top">{brand(footer=True)}<a href="#conteudo">Voltar ao início ↑</a></div><nav class="footer-nav" aria-label="Navegação do rodapé">{links}</nav><div class="footer-bottom"><span>© 2026 Equipe Ponte</span><a href="mailto:equipeponte@gmail.com">equipeponte@gmail.com</a><span>São Paulo, Brasil</span></div></footer></body></html>'
+    return f'<footer class="footer wrap"><div class="footer-top">{brand(footer=True)}<a href="#conteudo">Voltar ao início ↑</a></div><nav class="footer-nav" aria-label="Navegação do rodapé">{links}</nav><div class="footer-bottom"><span>© 2026 Equipe Ponte</span><nav class="footer-social" aria-label="Redes sociais e email"><a href="mailto:equipeponte@gmail.com" aria-label="Enviar email à Equipe Ponte"><span class="footer-social-icon footer-social-icon--email" aria-hidden="true"></span></a><a href="https://www.facebook.com/equipeponte/" aria-label="Equipe Ponte no Facebook"><span class="footer-social-icon footer-social-icon--facebook" aria-hidden="true"></span></a><a href="https://www.instagram.com/equipeponte/" aria-label="Equipe Ponte no Instagram"><span class="footer-social-icon footer-social-icon--instagram" aria-hidden="true"></span></a></nav></div></footer></body></html>'
 
 def para(i):
     text=escape(P[i])
