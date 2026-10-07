@@ -1,0 +1,15 @@
+/* Motion only: visual tokens, layout and breakpoints stay in styles.css. */
+:root {
+  --motion-fast: 0.35s;
+  --motion-normal: 0.75s;
+  --motion-slow: 1.05s;
+}
+html.ponte-motion { scroll-behavior: auto; }
+html.lenis, html.lenis body { height: auto; }
+.motion-line { display: inline-block; }
+.ponte-motion .button { transition-duration: var(--motion-fast); }
+.ponte-motion .button__icon { transition-duration: var(--motion-fast); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  .motion-line { transform: none !important; opacity: 1 !important; clip-path: none !important; }
+}

@@ -1,13 +1,20 @@
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector("#main-nav");
-function closeMenu() {
-  menuButton?.setAttribute("aria-expanded", "false");
-  nav?.classList.remove("is-open");
-}
-menuButton?.addEventListener("click", () => {
-  const open = menuButton.getAttribute("aria-expanded") !== "true";
+function setMenu(open) {
+  if (!menuButton || !nav) return;
+  const wasOpen = menuButton.getAttribute("aria-expanded") === "true";
+  if (wasOpen === open) return;
   menuButton.setAttribute("aria-expanded", String(open));
-  nav.classList.toggle("is-open", open);
+  const finish = () => {
+    nav.classList.toggle("is-open", open);
+    nav.inert = !open && getComputedStyle(menuButton).display !== "none";
+  };
+  if (window.PonteMotion) window.PonteMotion.menu(open, finish);
+  else finish();
+}
+function closeMenu() { setMenu(false); }
+menuButton?.addEventListener("click", () => {
+  setMenu(menuButton.getAttribute("aria-expanded") !== "true");
 });
 nav
   ?.querySelectorAll("a")
@@ -24,7 +31,10 @@ document.addEventListener("keydown", (event) => {
 document.addEventListener("click", (event) => {
   if (!event.target.closest(".site-header")) closeMenu();
 });
-matchMedia("(min-width: 1201px)").addEventListener("change", closeMenu);
+matchMedia("(min-width: 1201px)").addEventListener("change", () => {
+  closeMenu();
+  if (nav) nav.inert = getComputedStyle(menuButton).display !== "none" && menuButton.getAttribute("aria-expanded") !== "true";
+});
 document.querySelectorAll("[data-copy]").forEach((button) =>
   button.addEventListener("click", async () => {
     const status = document.querySelector("#copy-status");
