@@ -902,8 +902,8 @@ figcaption {
 }
 .footer-social-icon--email {
   --social-icon: url("images/email-icon.svg");
-  width: 35px;
-  height: 35px;
+  width: 31.5px;
+  height: 31.5px;
 }
 .footer-social-icon--facebook {
   --social-icon: url("images/facebook-icon.svg");
