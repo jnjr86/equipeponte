@@ -50,7 +50,7 @@ def picture(name, alt, caption='', width=1200, height=900, eager=False):
 def page(title,description,current,body,subtitle='',extra_class=''):
     if 'contact-section small-contact' not in body: body += cta()
     intro=f'<section class="page-intro wrap"><a class="breadcrumb" href="index.html">Home <span aria-hidden="true">/</span></a><h1>{title}</h1>'+(f'<p>{subtitle}</p>' if subtitle else '')+'</section>'
-    header_class = "inner-header inner-header--content" if current in ('a-equipe.html', 'o-grupo.html', 'oficinas.html', 'textos-e-publicacoes.html', 'eventos-e-exposicoes.html') else "inner-header"
+    header_class = "inner-header inner-header--content" if current in ('a-equipe.html', 'o-grupo.html', 'oficinas.html', 'textos-e-publicacoes.html', 'eventos-e-exposicoes.html', 'contato.html') else "inner-header"
     PUBLIC.joinpath(current).write_text(head(title,description,current)+f'<div class="{header_class}">{header(current)}</div><main id="conteudo" class="{extra_class}">'+intro+body+'</main>'+footer())
 
 def cta():
