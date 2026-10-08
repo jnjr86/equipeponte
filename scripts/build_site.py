@@ -34,6 +34,8 @@ def footer():
 
 def para(i):
     text=escape(P[i])
+    if i == 70:
+        text=text.replace("Rua Paris, 656 - Sumaré (CEP01257-040)", '<strong class="contact-address-emphasis">Rua Paris, 656 - Sumaré (CEP01257-040)</strong>').replace("</strong>, ", "</strong>,<br> ")
     # Link only the navigation references present in the source, preserving words.
     mapping={5:[('o grupo','o-grupo.html')],9:[('oficinas','oficinas.html')],10:[('textos e publicações','textos-e-publicacoes.html')],11:[('a equipe','a-equipe.html')],12:[('contato','contato.html')],23:[('oficinas','oficinas.html')],31:[('textos e publicações','textos-e-publicacoes.html')],49:[('o GRUPO','o-grupo.html'),('OFICINAS','oficinas.html')],67:[('CONTATO','contato.html')]}
     for label,href in mapping.get(i,[]):
