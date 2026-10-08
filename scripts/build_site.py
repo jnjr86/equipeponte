@@ -8,7 +8,7 @@ PUBLIC = ROOT / 'public'
 DATA = json.loads((ROOT / 'content/site-content.json').read_text())
 P = DATA['paragraphs']
 BASE = 'https://equipeponte.vercel.app'
-MENU = [('Home','index.html'),('A Equipe','a-equipe.html'),('O Grupo','o-grupo.html'),('Oficinas','oficinas.html'),('Textos e publicações','textos-e-publicacoes.html'),('Eventos e Exposições','eventos-e-exposicoes.html'),('Contato','contato.html')]
+MENU = [('Home','index.html'),('A Equipe','a-equipe.html'),('O Grupo','o-grupo.html'),('Oficinas','oficinas.html'),('Textos e publicações','textos-e-publicacoes.html'),('Eventos e exposições','eventos-e-exposicoes.html'),('Contato','contato.html')]
 ARROW = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
 def button(text, href, variant='primary'):

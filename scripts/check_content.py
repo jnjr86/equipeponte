@@ -5,7 +5,7 @@ import json,re
 ROOT=Path(__file__).resolve().parents[1]
 source=json.loads((ROOT/'content/site-content.json').read_text())['paragraphs']
 normalize=lambda s: re.sub(r'\s+',' ',s).strip()
-expected_menu=['Home','A Equipe','O Grupo','Oficinas','Textos e publicações','Eventos e Exposições','Contato']
+expected_menu=['Home','A Equipe','O Grupo','Oficinas','Textos e publicações','Eventos e exposições','Contato']
 required={3,4,5,6,7,8,9,10,11,12,13,14,17,18,19,21,22,23,27,28,29,30,31,33,35,38,40,42,44,46,49,67,70}
 found=set()
 class Audit(HTMLParser):
