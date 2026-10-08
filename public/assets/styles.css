@@ -2249,3 +2249,10 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
   background-position: center;
   mix-blend-mode: normal;
 }
+
+/* Match the selected inner-page navigation to the content container. */
+.inner-header.inner-header--content {
+  width: min(var(--content-width), calc(100% - var(--page-gutter) * 2));
+  margin-inline: auto;
+  padding-inline: 0;
+}

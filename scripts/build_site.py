@@ -50,7 +50,8 @@ def picture(name, alt, caption='', width=1200, height=900, eager=False):
 def page(title,description,current,body,subtitle='',extra_class=''):
     if 'contact-section small-contact' not in body: body += cta()
     intro=f'<section class="page-intro wrap"><a class="breadcrumb" href="index.html">Home <span aria-hidden="true">/</span></a><h1>{title}</h1>'+(f'<p>{subtitle}</p>' if subtitle else '')+'</section>'
-    PUBLIC.joinpath(current).write_text(head(title,description,current)+f'<div class="inner-header">{header(current)}</div><main id="conteudo" class="{extra_class}">'+intro+body+'</main>'+footer())
+    header_class = "inner-header inner-header--content" if current in ('a-equipe.html', 'o-grupo.html', 'oficinas.html', 'textos-e-publicacoes.html', 'eventos-e-exposicoes.html') else "inner-header"
+    PUBLIC.joinpath(current).write_text(head(title,description,current)+f'<div class="{header_class}">{header(current)}</div><main id="conteudo" class="{extra_class}">'+intro+body+'</main>'+footer())
 
 def cta():
     return '<section class="contact-section small-contact"><div class="wrap contact-inner"><p class="overline">Contato</p><div class="home-contact-heading"><img class="home-section-icon home-section-icon--contact" src="assets/images/contact-icon.png" width="144" height="216" alt="" loading="lazy"><h2>Escreva <em>para nós.</em></h2></div>'+button('Fale com a equipe','contato.html','mint')+'</div></section>'
