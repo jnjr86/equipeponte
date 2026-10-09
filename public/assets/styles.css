@@ -2260,3 +2260,8 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
 .contact-information .contact-address-emphasis {
   font-weight: 600;
 }
+
+.page-intro .team-presence-art {
+  max-width: 482px;
+  margin: 40px 0 0;
+}
