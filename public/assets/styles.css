@@ -2264,5 +2264,5 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
 .page-intro .team-presence-art {
   max-width: 900px;
   margin: clamp(56px, 6vw, 80px) auto 0;
-  text-align: center;
+  text-align: left;
 }
