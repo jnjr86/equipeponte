@@ -2262,6 +2262,7 @@ a:not(.button):not(.nav-contact):not(.brand):hover {
 }
 
 .page-intro .team-presence-art {
-  max-width: 482px;
-  margin: 40px 0 0;
+  max-width: 900px;
+  margin: clamp(56px, 6vw, 80px) auto 0;
+  text-align: center;
 }
